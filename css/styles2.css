@@ -18,3 +18,11 @@ body{
   position: fixed;
   top: 0;
 }
+#nav-bar{
+  float: right;
+  padding-top: 5%;
+  padding-right: 2%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
