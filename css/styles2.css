@@ -50,9 +50,9 @@ li a:hover {
 #form1{
   color: #ECF0F1;
   margin-left: 60%;
-width: max-content;
-margin-top: 15%;
-text-align: center;
+  width: max-content;
+  margin-top: 15%;
+  text-align: center;
 }
 .check1{
   text-align: left;
