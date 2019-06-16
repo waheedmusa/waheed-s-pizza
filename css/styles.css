@@ -48,3 +48,14 @@ li a {
 li a:hover {
   color: #996515;
 }
+.h1{
+  font-family: 'Pacifico', cursive;
+  font-family: 'Norican', cursive;
+  text-align: center;
+  padding-top: 20%;
+  color: white;
+}
+.h2{
+  text-align: center;
+  color: white;
+}
