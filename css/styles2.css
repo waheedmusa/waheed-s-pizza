@@ -47,3 +47,10 @@ li a {
 li a:hover {
   color: #996515;
 }
+#form1{
+  color: #ECF0F1;
+  margin-left: 60%;
+width: max-content;
+margin-top: 15%;
+text-align: center;
+}
