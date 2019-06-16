@@ -26,3 +26,24 @@ body{
   top: 0;
   width: 100%;
 }
+ul {
+  list-style-type: none;
+  background: rgba(0, 0, 0, 0)
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 25px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #996515;
+}
