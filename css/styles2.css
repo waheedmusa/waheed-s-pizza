@@ -4,3 +4,9 @@
   }
 }
 @import url("bootstrap.css");
+
+body{
+  background-image: url("../images/pizza-maker.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
