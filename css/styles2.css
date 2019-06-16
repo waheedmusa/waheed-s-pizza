@@ -10,3 +10,11 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
 }
+#img1{
+  width: 220px;
+  height: 220px;
+  padding-top: 50px;
+  padding-left: 50px;
+  position: fixed;
+  top: 0;
+}
