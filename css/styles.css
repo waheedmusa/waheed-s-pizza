@@ -3,7 +3,6 @@
 
   }
 }
-
 @import url("bootstrap.css");
 
 body{
@@ -53,9 +52,9 @@ li a:hover {
   font-family: 'Norican', cursive;
   text-align: center;
   padding-top: 20%;
-  color: white;
+  color: #996515;
 }
 .h2{
   text-align: center;
-  color: white;
+  color: #ECF0F1;
 }
