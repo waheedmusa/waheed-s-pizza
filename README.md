@@ -19,6 +19,8 @@ Customers visiting this website should expect:
 * the cutomer they inputs the number of pizzas they would like to have
 * finally the customer chooses whether or not they would their pizza delivered
 * once the customer is satisfied with their choice, the tootal price of the pizza is displayed on the screen
+* if the customer wants to have the pizza to be delivered, they should click the "click to order" button to reveal a form
+* when the customer fills in the form and clicks the "place your order" button, a message is displayed
 ## Known Bugs
 There were no bugs found during the building of this website.
 ## Technologies Used
