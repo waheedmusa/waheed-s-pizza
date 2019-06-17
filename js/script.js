@@ -98,7 +98,7 @@ $(document).ready(function() {
     $("input:checkbox:checked").map(function(){
       toppings.push($(this).val());
     });
-    
+
     var userPizza = new Pizza(size,toppings,crust,delivery,number);
     var grandTotal = userPizza.pizzaCost();
 
@@ -115,7 +115,6 @@ $(document).ready(function() {
 
 
       $('.butt2').click(function() {
-       $('#demo').show();
+       alert("Your pizza will be there shortly. Enjoy!");
       });
-
 });
