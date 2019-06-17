@@ -1,73 +1,99 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewpoint" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="animate.css">
-  <title>Order Now</title>
-  <link rel="stylesheet" type="text/css" href="css/styles2.css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-  <link rel="shortcut icon" href="images/pizza-tag.jpg">
-</head>
-<body>
-  <a href="index.html">
-    <img id="img1" class="animated zoomIn" src="images/pizza-tag.jpg">
-  </a>
-  <ul id="nav-bar" class="animated zoomIn">
-    <li><a class="active" href="#order">Order</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#about">About</a></li>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+    <title>Order Now</title>
+    <link rel="stylesheet" type="text/css" href="css/styles2.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="shortcut icon" href="images/pizza-tag.jpg">
+  </head>
+  <body>
+    <a href="index.html">
+      <img id="img1" class="animated zoomIn" src="images/pizza-tag.jpg">
+    </a>
+    <ul id="nav-bar" class="animated zoomIn">
+  <li><a class="active" href="#order">Order</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
     <li><a href="index.html">Home</a></li>
-  </ul>
-  <div class="container1">
-    <div class="col-5 colmn">
-      <form name="pizzaOrder" id="form1" class="animated zoomIn">
-        <div class="input1">
-          <h2>What size do you want your pizza?</h2>
-          <div class="check1">
-            <input type="radio" name="sizes" value="Small: 1000"> Small<br>
-            <input type="radio" name="sizes" value="Medium: 1500"> Medium<br>
-            <input type="radio" name="sizes" value="Large: 2000"> Large
-          </div>
-        </div>
-        <div class="input2">
-          <h3>What toppings would you like on your pizza?</h3>
-          <h4>Each topping is Ksh600</h4>
-          <div class="check2">
-            <input type="radio" name="toppings" value="Pepperoni"> Pepperoni <br>
-            <input type="radio" name="toppings" value="Mushrooms"> Mushrooms<br>
-            <input type="radio" name="toppings" value="Extra Cheese"> Extra Cheese<br>
-            <input type="radio" name="toppings" value="Black Olives"> Black Olives<br>
-            <input type="radio" name="toppings" value="Pineapple"> Pineapple<br>
-          </div>
-        </div>
-        <div class="input3">
-          <h3>What type of crust would you like your pizza to have?</h3>
-          <div class="check3">
-            <input type="radio" name="crusts" value="thin"> Thin <br>
-            <input type="radio" name="crusts" value="thick"> Thick<br>
-            <input type="radio" name="crusts" value="deep"> Deep<br>
-            <input type="radio" name="crusts" value="cheese filled"> Cheese Filled<br>
-          </div>
-        </div>
-        <div class="input3">
-          <h3>How many pizza would you like?</h3>
-          <input type="number" name="quantity">
-        </div>
-        <div class="imput4">
-          <h3>Would you like your pizza delivered?</h3>
-          <div class="check4">
-            <input type="radio" name="delivery" value="delivery"> Delivery <br>
-            <input type="radio" name="delivery" value="no delivery"> No Delivery
-          </div>
-        </div>
-        <br>
-        <button onclick="placeOrder()">Place Order</button>
-      </form>
-    </div>
+    </ul>
+    <div class="container1">
+        <div class="col-5 colmn">
+    <form name="pizzaOrder" id="form1" class="animated zoomIn">
+      <div class="input1">
+      <h3 class="header-color">What size do you want your pizza?</h3>
+      <div class="check1">
+      <input type="radio" name="pizzasize" value="small"> Small: Ksh 1000 <br>
+  <input type="radio" name="pizzasize" value="medium"> Medium: Ksh 1500<br>
+  <input type="radio" name="pizzasize" value="large"> Large: Ksh 2000
   </div>
-  <p id="order"></p>
-</body>
+  </div>
+  <div class="input2">
+    <h3 class="header-color">What toppings would you like on your pizza?</h3>
+    <div class="check2">
+    <input type="checkbox" name="pizzatopping" value="pepperoni"> Pepperoni: Ksh 500 <br>
+<input type="checkbox" name="pizzatopping" value="mushroom"> Mushrooms: Ksh 500 <br>
+<input type="checkbox" name="pizzatopping" value="cheese"> Extra Cheese: Ksh 600 <br>
+<input type="checkbox" name="pizzatopping" value="pineapple"> Pineapple: Ksh 550 <br>
+</div>
+  </div>
+  <div class="input3">
+    <h3 class="header-color">What type of crust would you like your pizza to have?</h3>
+    <div class="check3">
+    <input type="radio" name="pizzacrust" value="thin"> Thin: Ksh 400 <br>
+<input type="radio" name="pizzacrust" value="thick"> Thick: Ksh 500<br>
+<input type="radio" name="pizzacrust" value="deep"> Deep: Ksh 600<br>
+</div>
+  </div>
+  <div class="input3">
+    <h3 class="header-color">How many pizza would you like?</h3>
+    <select id="drop" name="number">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>
+  </div>
+  <div class="imput4">
+    <h3 class="header-color">Would you like your pizza delivered?</h3>
+    <div class="check4">
+    <input type="radio" name="pizzadelivery" value="delivery"> Delivery: Ksh 1000 <br>
+<input type="radio" name="pizzadelivery" value="no"> No Delivery
+</div>
+  </div>
+  <br>
+  <button class="butt0" type="submit" value="Get Value" id="placeOrder()">See Total</button>
+    </form>
+    </div>
+</div>
+<br>
+<div id="result">
+<p>Total Price: Ksh <span id="order"></span></p>
+</div>
+<button type="dev" class="butt1">click To Order</button>
+<form class="form2">
+      First Name:
+      <input type="" name="">
+      Last Name:
+      <input type="" name=""><br><br>
+      Your Area:
+      <input type="" name="">
+      Phone No:
+      <input type="" name="">
+      <br><br>
+      <button type="dev" class="butt2">Place Your Order</button>
+      <p id ="demo" >Your pizza will arrive shortly :)</p>
+    </form>
+
+  </body>
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 </html>
